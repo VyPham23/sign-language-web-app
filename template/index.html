@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+  <!-- 
+    Section: #F9D348
+    Sub: #302BDC
+    BG: #FCF1E6
+    texxt: #11172D -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/static/style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+  <title>Hello World!</title>
+
+  <!-- Import the webpage's stylesheet -->
+  <!-- <link rel="stylesheet" href="/style.css" /> -->
+</head>
+
+<body class="bg-[#FCF1E6]">
+  <!--
+      This is the body of the page
+    -->
+
+ 
+    <!-- Results -->
+    <div class="w-4/6 h-[40rem] flex flex-col justify-evenly mt-7 mx-auto my-auto bg-white border-2 border-black">
+        <!-- Webcam -->
+        <div class="pt-8 items-center">
+        <img src="{{ url_for('video_feed') }}" width="100%" alt="webcam" class="w-5/6 h-[28rem] mx-auto rounded-lg" />
+    </div>
+
+    <button class="rounded-none container text-white mx-auto w-4/6 bg-black hover:bg-[#302BDC] py-2"
+              >REFRESH</button>
+  </div>
+</body>
+
+</html>
